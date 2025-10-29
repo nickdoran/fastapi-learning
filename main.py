@@ -13,6 +13,9 @@ users = {
     }
 }
 
+#Base pydantic mod
+
+
 @app.get("/")
 def root():
     return {"Message": "Hello World"}
