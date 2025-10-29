@@ -14,6 +14,18 @@ users = {
 }
 
 #Base pydantic mod
+class User(BaseModel):
+    name: str
+    website: str
+    age: int
+    role: str
+
+class UpdateUser(BaseModel):
+    name: Optional[str] = None
+    website: Optional[str] = None
+    age: Optional[int] = None
+    role: Optional[str] = None
+
 
 
 @app.get("/")
